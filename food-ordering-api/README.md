@@ -86,7 +86,7 @@ Khởi động server và kết nối cơ sở dữ liệu.
 
 1. Clone repository này về máy của bạn:
     ```bash
-   git clone https://github.com/yourusername/food-ordering-api.git
+   git clone https://github.com/taduynghia/B-i-t-p-Sequelize.git
    cd food-ordering-api
     ```
 
