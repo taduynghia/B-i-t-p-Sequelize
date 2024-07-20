@@ -1,7 +1,7 @@
-import { Router } from 'express';
+import express from 'express';
 import { rateRestaurant, getRatings, createOrder } from '../controllers/userController.js';
 
-const router = Router();
+const router = express.Router();
 
 router.post('/rate', rateRestaurant);
 router.get('/ratings', getRatings);

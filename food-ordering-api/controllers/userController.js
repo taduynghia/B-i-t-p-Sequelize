@@ -1,5 +1,6 @@
 import models from '../models/index.js';
 
+// Rate a restaurant by a user
 export const rateRestaurant = async (req, res) => {
     const { user_id, res_id, amount } = req.body;
     try {
@@ -10,6 +11,7 @@ export const rateRestaurant = async (req, res) => {
     }
 };
 
+// Get ratings by user_id and/or res_id
 export const getRatings = async (req, res) => {
     const { user_id, res_id } = req.query;
     try {
@@ -20,12 +22,13 @@ export const getRatings = async (req, res) => {
     }
 };
 
+// Create an order by a user
 export const createOrder = async (req, res) => {
     const { user_id, food_id, amount, code, arr_sub_id } = req.body;
     try {
         await models.Order.create({ user_id, food_id, amount, code, arr_sub_id });
         res.status(200).send('Order created successfully');
-        } catch (error) {
+    } catch (error) {
         res.status(500).send('Error creating order');
     }
 };

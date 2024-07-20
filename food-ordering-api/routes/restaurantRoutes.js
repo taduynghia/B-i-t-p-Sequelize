@@ -1,10 +1,10 @@
-import { Router } from 'express';
-import { likeRestaurant, unlikeRestaurant, getLikes } from '../controllers/restaurantController.js';
+import express from 'express';
+import { rateRestaurant, getRatings, createOrder } from '../controllers/restaurantController.js';
 
-const router = Router();
+const router = express.Router();
 
-router.post('/like', likeRestaurant);
-router.post('/unlike', unlikeRestaurant);
-router.get('/likes', getLikes);
+router.post('/rate', rateRestaurant);
+router.get('/ratings', getRatings);
+router.post('/order', createOrder);
 
 export default router;
