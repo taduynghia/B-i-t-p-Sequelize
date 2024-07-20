@@ -1,6 +1,6 @@
 import { DataTypes } from 'sequelize';
 import sequelize from '../config/database.js';
-import Food from './food.js';
+import Food from './Food.js';
 
 const SubFood = sequelize.define('SubFood', {
   sub_id: {

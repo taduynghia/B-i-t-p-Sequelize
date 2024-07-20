@@ -1,12 +1,13 @@
 import sequelize from '../config/database.js';
-import User from './user.js';
-import Restaurant from './restaurant.js';
-import Order from './order.js';
-import LikeRes from './likeRes.js';
-import RateRes from './rateRes.js';
-import Food from './food.js';
-import SubFood from './subFood.js';
-import FoodType from './foodType.js';
+import User from './User.js';
+import Restaurant from './Restaurant.js';
+import RateRes from './RateRes.js';
+import Food from './Food.js';
+import SubFood from './SubFood.js';
+import FoodType from './FoodType.js';
+import Order from './Order.js';
+import LikeRes from './LikeRes.js';
+
 
 const models = {
     User,
